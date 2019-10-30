@@ -1,0 +1,30 @@
+//Roboto font
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto-Regular/Roboto-Regular.eot");
+    src: url("./assets/fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Roboto-Regular/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto-Bold/Roboto-Bold.eot");
+    src: url("./assets/fonts/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype"),
+    url("./assets/fonts/Roboto-Bold/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+//OpenSans font
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans-Bold/OpenSans-Bold.eot");
+    src: url("./assets/fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"),
+    url("./assets/fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
