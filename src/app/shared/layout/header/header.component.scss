@@ -1,0 +1,87 @@
+@import "./src/scss/base/variables.scss";
+@import "./src/scss/base/mixin.scss";
+
+.head-container {
+    padding: 8px 60px 24px;
+    border-bottom: 1px solid $lightgray;
+}
+.info-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    a {
+        font-size: 30px;
+        font-family: "OpenSans", sans-serif;
+    }
+}
+.main-panel {
+    display: flex;
+    a {
+        font-size: 12px;
+        font-family: $roboto;
+        font-weight: 400;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.sign-panel {
+    display: flex;
+    position: relative;
+    margin-right: 64px;
+    > div {
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+    &:before {
+        content: "";
+        display: block;
+        height: 70%;
+        width: 1px;
+        background-color: $gray;
+        position: absolute;
+        top: 3px;
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
+.nav-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.nav-menu {
+    display: flex;
+    li {
+        margin-right: 60px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        font-family: $OS;
+        font-size: 13px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-search {
+    input {
+        border: none;
+        border-bottom: 2px solid $lightgray;
+        outline: none;
+        border-radius: 0;
+        padding: 0 0 4px 0;
+        &::placeholder {
+            font-family: $OS;
+            font-size: 12px;
+        }
+    }
+}
