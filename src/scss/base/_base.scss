@@ -22,8 +22,18 @@ a {
 }
 
 //Custom styles
+.main-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @include tablet-portrait {
+        padding: 0 24px;
+    }
+}
+
 .content-container {
     max-width: 1120px;
+    margin: 0 auto;
     padding: 0 30px;
     @include tablet-portrait {
         padding: 0 24px;

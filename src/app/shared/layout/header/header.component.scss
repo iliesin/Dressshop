@@ -51,12 +51,13 @@
 
 .nav-panel {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 8px;
 }
 .nav-menu {
     display: flex;
+    align-items: center;
     li {
         margin-right: 60px;
         &:last-child {
@@ -72,16 +73,44 @@
     }
 }
 
-.nav-search {
+.search-input {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        background: url(/assets/images/header/search.svg);
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+    }
+    label {
+        font-family: $OS;
+        font-size: 12px;
+        margin-bottom: 4px;
+        display: inline-block;
+        vertical-align: middle;
+    }
     input {
-        border: none;
-        border-bottom: 2px solid $lightgray;
+        display: block;
+        border: 1px solid $lightgray;
         outline: none;
         border-radius: 0;
-        padding: 0 0 4px 0;
-        &::placeholder {
-            font-family: $OS;
-            font-size: 12px;
-        }
+        padding: 6px 12px;
+    }
+}
+
+.bag {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(/assets/images/header/shopping-bag.svg);
+        position: absolute;
+        left: -19px;
+        top: 0;
     }
 }
