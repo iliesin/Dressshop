@@ -1,0 +1,182 @@
+@import "./src/scss/base/variables.scss";
+@import "./src/scss/base/mixin.scss";
+
+.navigation-container {
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #ccd1d1;
+    border-bottom: 1px solid #ccd1d1;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-right: 1px solid #ccd1d1;
+        margin-right: -.5px;
+    }
+    h4 {
+        font-family: $OS;
+    }
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.quick-info {
+    width: 50%;
+    display: flex;
+    padding: 59px 60px 74px;
+    h4 {
+        margin-bottom: 45px;
+    }
+    li {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        font-size: 14px;
+        font-family: $roboto;
+    }
+}
+
+.links-info,
+.about-site {
+    width: 50%;
+}
+
+.license-info {
+    width: 50%;
+    padding: 59px 60px 74px;
+    display: flex;
+    flex-wrap: wrap;
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.questions,
+.back-call {
+    width: 50%;
+}
+
+.questions-content {
+    font-size: 14px;
+    font-family: $roboto;
+    padding-left: 24px;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(/assets/images/footer/social/twitter-grey.svg);
+        position: absolute;
+        left: 0;
+    }
+    a {
+        font-weight: 700;
+    }
+}
+
+.back-call {
+    a {
+        font-size: 14px;
+        font-family: $roboto;
+    }
+}
+
+.about-us,
+.social {
+    width: 100%;
+}
+
+.about-us {
+    margin-top: 75px;
+    font-style: italic;
+    line-height: 30px;
+    max-width: 305px;
+    color: #757575;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    li {
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    img {
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.privacy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.created {
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.share {
+    display: flex;
+    span {
+        font-size: 18px;
+        font-family: $OS;
+    }
+}
+.share-counter {
+    margin-left: 8px;
+    background-color: #f4f4f4;
+    padding: 6px;
+    font-family: $roboto;
+    font-size: 12px;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        border-top: 5px solid transparent;
+        border-right: 7px solid #f4f4f4;
+        border-bottom: 5px solid transparent;
+        position: absolute;
+        left: -6px;
+        top: 50%;
+        margin-top: -5px;
+    }
+}
+
+.privacy {
+    display: flex;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 12px;
+    li {
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

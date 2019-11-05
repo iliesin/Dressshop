@@ -1,10 +1,23 @@
-<div class="main-container">
-  <ngx-slick-carousel
-    class="home-carousel"
-    #slickModal="slick-carousel"
-    [config]="slideConfig">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <img src="{{ slide.img }}" alt="" width="100%" />
+<ngx-slick-carousel
+  class="home-carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig">
+  <div class="slide" ngxSlickItem *ngFor="let slide of slides">
+    <img src="{{ slide.img }}" alt="" width="100%"/>
+  </div>
+</ngx-slick-carousel>
+
+<section class="arrivals main-container">
+  <h2 class="section-title">New arrivals</h2>
+  <div class="arrivals-collection">
+    <div class="arrival" *ngFor="let arrival of showArrivals">
+      <img [src]="arrival.img" alt="">
+      <div class="arrival-name">{{ arrival.name }}</div>
+      <div class="arrival-price">&pound;{{ arrival.price }}</div>
     </div>
-  </ngx-slick-carousel>
-</div>
+  </div>
+  <button class="btn-all-arrivals"
+          type="button"
+          (click)="showAll()"
+          *ngIf="!showedAll">All arrivals</button>
+</section>

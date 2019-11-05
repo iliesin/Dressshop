@@ -1,0 +1,59 @@
+@import "./src/scss/base/variables.scss";
+@import "./src/scss/base/mixin.scss";
+
+.slide {
+    height: 600px;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.section-title {
+    font-size: 50px;
+    font-family: $OS;
+}
+
+//Arrivals
+.arrivals {
+    text-align: center;
+    padding: 100px 0 60px;
+}
+.arrivals-collection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+.arrival {
+    margin-right: 70px;
+    width: calc(100% / 12 * 3 - 70px);
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.arrival-name {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 30px 0 10px;
+}
+
+.btn-all-arrivals {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    font-size: 24px;
+    font-family: $OS;
+    padding: 20px 55px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color .3s, border-color .3s;
+    &:hover {
+        background-color: #eaf2f8;
+        border-color: #eaf2f8;
+    }
+}
