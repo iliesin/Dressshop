@@ -1,6 +1,8 @@
 //Base
-
 @import "./src/scss/base/variables.scss";
 @import "./src/scss/base/mixin.scss";
 @import "./src/scss/base/typography.scss";
 @import "./src/scss/base/base.scss";
+
+//Custom
+@import "./src/scss/custom/custom-ng-template.scss";

@@ -1,0 +1,69 @@
+{
+    "dress-collection": [
+        {
+            "name": "Straight Leg Jeans",
+            "price": "55.00",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress1.jpg"
+        },
+        {
+            "name": "Boyfriend T-Shirt with Bohemian Print",
+            "price": "34.25",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress2.jpg"
+        },
+        {
+            "name": "Only Busted Knee Jean",
+            "price": "140.50",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress3.jpg"
+        },
+        {
+            "name": "Only Busted Jean",
+            "price": "12.75",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress4.jpg"
+        },
+        {
+            "name": "Neck Knitted Jumper",
+            "price": "76.25",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress5.jpg"
+        },
+        {
+            "name": "Turtle Neck Jumper",
+            "price": "130.25",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress6.jpg"
+        },
+        {
+            "name": "With Patchwork Crochet",
+            "price": "80.60",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress7.jpg"
+        },
+        {
+            "name": "Monki Festval",
+            "price": "24.75",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress8.jpg"
+        },
+        {
+            "name": "Cardigan Neon Trims",
+            "price": "90.00",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress9.jpg"
+        },
+        {
+            "name": "Joe Sister Jumper",
+            "price": "19.75",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress10.jpg"
+        },
+        {
+            "name": "Paul Jumper",
+            "price": "51.24",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress11.jpg"
+        },
+        {
+            "name": "Paul Knitted",
+            "price": "71.84",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress12.jpg"
+        },
+        {
+            "name": "Jumper in Rib",
+            "price": "20.29",
+            "img":  "http://localhost:4200/assets/images/dress-colection/dress13.jpg"
+        }
+    ]
+}

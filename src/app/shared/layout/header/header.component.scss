@@ -66,8 +66,9 @@
     a {
         font-family: $OS;
         font-size: 13px;
+        transition: color .3s;
         &:hover {
-            text-decoration: underline;
+            color: #f14a58;
         }
     }
 }

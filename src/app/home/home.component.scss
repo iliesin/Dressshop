@@ -2,58 +2,91 @@
 @import "./src/scss/base/mixin.scss";
 
 .slide {
-    height: 600px;
-    img {
-        height: 100%;
-        object-fit: cover;
-    }
+  height: 600px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .section-title {
-    font-size: 50px;
-    font-family: $OS;
+  font-size: 48px;
+  font-family: $OS;
 }
 
 //Arrivals
 .arrivals {
-    text-align: center;
-    padding: 100px 0 60px;
+  text-align: center;
+  padding: 100px 0 60px;
 }
 .arrivals-collection {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 60px 0;
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 70px;
 }
 .arrival {
-    margin-right: 70px;
-    width: calc(100% / 12 * 3 - 70px);
-    img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  
+  &:hover {
+    .arrival-img-card {
+      &:before {
+				content: "View item";
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+		}
+		.arrival-name {
+			color: #f14a58;
+		}
+  }
+}
+.arrival-img-card {
+	height: 340px;
+	position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		transition: background-color 0.3s;
+		color: #f14a58;
+		line-height: 340px;
+		font-family: $OS;
+		font-size: 22px;
+	}
 }
 .arrival-name {
-    font-family: $roboto;
-    font-weight: 700;
-    font-size: 14px;
-    margin: 30px 0 10px;
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 30px 0 10px;
+	padding: 0 8px;
+	transition: color 0.3s;
+}
+.arrival-price {
+	font-family: $roboto;
+	font-size: 14px;
 }
 
 .btn-all-arrivals {
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    font-size: 24px;
-    font-family: $OS;
-    padding: 20px 55px;
-    cursor: pointer;
-    border-radius: 0;
-    transition: background-color .3s, border-color .3s;
-    &:hover {
-        background-color: #eaf2f8;
-        border-color: #eaf2f8;
-    }
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 24px;
+  font-family: $OS;
+  padding: 14px 55px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: color 0.3s, border-color 0.3s;
+  &:hover {
+		color: #f14a58;
+    border-color: #f14a58;
+  }
 }
