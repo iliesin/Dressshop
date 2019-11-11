@@ -18,6 +18,5 @@
   </div>
   <button class="btn-all-arrivals"
           type="button"
-          (click)="showAll()"
-          *ngIf="!showedAll">All arrivals</button>
+          [routerLink]="['/search-result']">All arrivals</button>
 </section>

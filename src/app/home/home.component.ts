@@ -35,9 +35,4 @@ export class HomeComponent implements OnInit {
       this.showArrivals = this.arrivals.slice(0, 4);
     });    
   }
-
-  public showAll(): void {
-    this.showArrivals = this.arrivals;
-    this.showedAll = true;
-  }
 }

@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: "detail-item",
     loadChildren: "./detail-item/detail-item.module#DetailItemModule"
+  },
+  {
+    path: "search-result",
+    loadChildren: "./search-result/search-result.module#SearchResultModule"
   }
 ];
 

@@ -1,0 +1,10 @@
+<div class="filter-container">
+  <mat-form-field class="ng-custom-filter">
+    <mat-label>Fashion</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let item of propertyFilterOptions"
+                  (onSelect)="name(item.id)"
+                  [value]="item.name">{{ item.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
